@@ -1,0 +1,50 @@
+<%- include ('partials/head')%>
+    <title>
+        <%- title %>
+    </title>
+    <!--
+    <h1> empíeza a logearse</h1>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="/inicio">Inicio</a>
+            </li>
+        </ul>
+    </nav>
+    -->
+
+    <div class="grid grid-cols-1 gap-4 ">
+        <div class="h-screen content-center flex flex-wrap space-y-3 ">
+
+            <div class="w-full">
+                <div class="block w-96 m-auto text-gray-800 text-2xl text-center">Login</div>
+            </div>
+            <input id="newName"" class="block w-96 border border-gray-400 focus:outline-none focus:border-gray-500 p-1 text-sm m-auto"
+                placeholder="E-mail">
+            <div class="w-full">
+                <!-- era contraseña-->
+            </div>
+            <input class="block w-96 border border-gray-400 focus:outline-none focus:border-gray-500 p-1 text-sm m-auto"
+                placeholder="Password">
+            <div class="w-full " action="/inicio">
+                <button onclick="window.location.href='/inicio'"
+                    class="block w-96 border border-gray-400 focus:outline-none focus:border-gray-500 p-2 text-base m-auto mt-4 rounded-full bg-gray-600 text-white text-bold">Comenzar</button>
+            </div>
+            <div class="w-full">
+                <a href="/inicio">
+                    <div class="block w-96 m-auto text-gray-500 text-sm text-center">Crear cuenta</div>
+                </a> <!-- era contraseña-->
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        const txtnewName = document.getElementById('newName');
+        txtnewName.focus();
+
+    </script>
+<%- include ('partials/footer')%>
